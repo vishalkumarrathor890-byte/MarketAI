@@ -24,27 +24,27 @@ elif menu == "Idea Generator":
 
     st.header("💡 Business Idea Generator")
 
-    niche = st.text_input("Enter niche (AI, fitness, food)")
+    bottom = st.text_input("Enter bottom (AI, fitness, food)")
 
     if st.button("Generate Idea"):
 
-        if niche.lower() == "ai":
+        if bottom.lower() == "ai":
             st.success("AI Resume Builder for students")
             st.write("Target: College students")
             st.write("Revenue Model: Subscription")
 
-        elif niche.lower() == "fitness":
+        elif bottom.lower() == "fitness":
             st.success("Online Fitness Coaching App")
             st.write("Target: Busy professionals")
             st.write("Revenue Model: Monthly membership")
 
-        elif niche.lower() == "food":
+        elif bottom.lower() == "food":
             st.success("Healthy Meal Delivery Startup")
             st.write("Target: Gym lovers")
             st.write("Revenue Model: Weekly plan")
 
         else:
-            st.warning("Try niches like AI, fitness or food")
+            st.warning("Try bottoms like AI, fitness or food")
 
 # TREND ANALYZER
 elif menu == "Trend Analyzer":
